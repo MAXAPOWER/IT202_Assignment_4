@@ -1,0 +1,27 @@
+#market {
+  color: #0066ff;
+  font-weight: bold;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  background-color: #2d445e;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}

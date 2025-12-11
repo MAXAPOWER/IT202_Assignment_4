@@ -1,0 +1,30 @@
+<div class="container py-4">
+  <h2 class="text-center mb-4">Review Order</h2>
+
+  @if (product$ | async; as product) {
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <img [src]="'http://localhost:8067/' + product.image" class="card-img-top p-3" [alt]="product.name">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text text-muted">{{ product.description }}</p>
+            <p class="card-text fw-bold text-success fs-4">${{ product.price }}</p>
+
+            @if (!confirmationMessage) {
+              <button class="btn btn-success w-100" (click)="submitOrder(product)">Place Order</button>
+            }
+
+            @if (confirmationMessage) {
+              <div class="alert alert-success mt-3">
+                {{ confirmationMessage }}
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  } @else {
+    <p class="text-center text-muted">(!) Please select a monitor</p>
+  }
+</div>
