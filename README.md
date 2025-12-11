@@ -6,8 +6,7 @@ This readme assumes the use of Windows 10/11 and Terminal/PowerShell.
 
 **Step 1**: After unzipping the project, in the File Explorer, navigate to "\backend\", right-click in the folder/files pane and select "Open in Terminal".
 
-**Step 2**: In Terminal, run:
-`npm install` 
+**Step 2**: In Terminal, run:  `npm install` 
 After installation is complete, run: 
 `npm start`
 
